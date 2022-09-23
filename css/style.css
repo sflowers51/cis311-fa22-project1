@@ -56,3 +56,83 @@ pre {
   visibility: hidden;
   height: 0;
 }
+
+/* Showcase  */
+
+.showcase {
+  height: 500px;
+  position: relative;
+  
+}
+
+.showcase-text {
+  z-index: 100;
+  animation: slideInFromLeft 1s ease-in;
+}
+
+.showcase-form {
+  position: relative;
+  top:60px;
+  padding:40px;
+  z-index: 100;
+
+  animation: slideInFromRight 1s ease-in;
+}
+
+.showcase-form .form-control {
+  margin:30px 0;
+}
+
+.showcase-form input[type='text'],
+.showcase-form input[type='email'] {
+  border:0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 1.2rem;
+}
+
+.showcase-form input:focus {
+ outline: none;
+}
+
+/* .showcase::before,  */
+.showcase::after {
+  content: '';
+  position: absolute;
+  height: 150px;
+  bottom: -70px;
+  left: 0;
+  right:0;
+  background-color: var(--primary-color);
+  transform: skewY(-3deg);
+  z-index: -1;
+}
+
+
+/* Animations */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* Stats */
+.stats {
+  padding-top: 150px;
+}
+
