@@ -129,3 +129,59 @@
 .m-1{
     margin: 1rem;
 }
+
+.showcase{
+    position: relative;
+}
+
+.showcase {
+    animation: slideInFromLeft 
+}
+.showcase-form{
+    position: relative;
+    top: 60px;
+    padding: 40px;
+    z-index: 100;
+}
+
+.showcase-form .form-control {
+    margin: 30px 0;
+}
+
+.showcase-form input[type='text']{
+    border: #333;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+    font-size:1.2rem;
+}
+
+.showcase-form input:focus{
+    outline: none;
+}
+
+.showcase:after{
+    content: '';
+    position: absolute;
+    height: 150px;
+    bottom: -170px;
+    left:0;
+    right:0;
+    background-color: var(--primary-color);
+    transform: skewY(-3deg);
+    z-index: -1;
+}
+
+/* Animations */
+@keyframes slideInFromLeft{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+.stats{
+    padding-top: 150px;
+}
