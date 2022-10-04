@@ -15,6 +15,15 @@
   margin: 0;
 }
 
+.features-sub-head{
+  justify-content: center;
+  background-color:#f4f4f4 ;
+  padding: 5rem;
+}
+
+.features-main{
+  padding: 5rem;
+}
 body {
   font-family: 'Lato', sans-serif;
   color: #333;
@@ -95,6 +104,16 @@ pre {
  outline: none;
 }
 
+.navbar{
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.docs-head{
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
 /* .showcase::before,  */
 .showcase::after {
   content: '';
@@ -129,16 +148,72 @@ pre {
     justify-self: center;
     margin: auto;
     animation: slideInFromBottom 1s ease-in;
+    position:static;
   }
 
+  .bg-primary li {
+    font-size: 1.5rem;
+    padding: 2rem;
+  }
+}
 
+
+.navbar {
+  font-size: 1.5rem;
+  flex-direction: column;
 }
 
 /* Stats */
 .stats {
-  padding-top: 150px;
+  padding-top: 250px;
+  font-size: 1.45rem;
+  text-align: center;
 }
 
+.stats .flex div{
+  text-align: center;
+  margin: 2rem 4rem;
+  padding-left: 3rem;
+  padding-right: 5rem;
+  padding-top: 2rem;
+}
+
+.cli .image{
+  align-items: left;
+  justify-content: left;
+  width: 66%;
+}
+
+.cli{
+  padding: 4rem;
+  height: 60vh;
+}
+
+.cli .cards{
+  width: 34%;
+}
+
+.cli .cards .div{
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 2rem;
+  
+}
+
+.cloud{
+  background-color: var(--primary-color);
+  color: #fff;
+  align-items: center; 
+  justify-content: space-evenly;
+  flex: row;
+  
+}
+
+.cloud div{
+  text-align: center;
+  width: 100%;
+}
 
 .languages .container {
   flex-wrap: wrap;
@@ -164,6 +239,7 @@ pre {
 }
 
 
+
 /* Animations */
 @keyframes slideInFromLeft {
   0% {
@@ -184,4 +260,3 @@ pre {
     transform: translateX(0%);
   }
 }
-
